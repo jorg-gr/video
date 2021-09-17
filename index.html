@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Mi Reproductor de Video</title>
+</head>
+
+<body>
+    <header class="Header">
+        <h1>Mi Reproductor de Video</h1>
+    </header>
+    <section class="Container">
+        <video src="./public/videos/video.mp4" controls class="ContainerVideo"></video>
+        <section class="ContainerControls">
+            <button class="Button ContainerControlsPlay">Play</button>
+            <button class="Button ContainerControlsPause">Pause</button>
+            <button class="Button ContainerControlsStop">Stop</button>
+        </section>
+    </section>
+    <footer class="Footer">
+        <pre>Video Credits:</pre>
+        <pre>Motion Graphics provided by <a href="https://www.tubebacks.com">tubebacks</a></pre>
+        <pre>YouTube Channel: <a href="https://goo.gl/aayJRf">freemotionbacks</a></pre>
+    </footer>
+
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>
