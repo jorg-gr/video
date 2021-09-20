@@ -1,0 +1,23 @@
+.Button {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  block-size: 32px;
+  border: none;
+  inline-size: 32px;
+}
+.Button:active {
+  transform: scale(0.9);
+}
+.ButtonBackward {
+  background-image: url("../images/-10.svg");
+}
+.ButtonPlay {
+  background-image: url("../images/play.svg");
+}
+.ButtonPause {
+  background-image: url("../images/pause.svg");
+}
+.ButtonForward {
+  background-image: url("../images/+10.svg");
+}

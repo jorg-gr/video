@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Mi Reproductor de Video</title>
+</head>
+
+<body>
+    <section class="Container">
+        <section class="Player">
+            <video src="./public/videos/video.mp4" poster="./public/images/poster.jpg" class="ContainerVideo"></video>
+            <section class="PlayerOverlay">
+                <h2 class="PlayerTitle">Mi Reproductor de Video</h2>
+                <section class="PlayerControls">
+                    <button class="Button ButtonBackward" aria-label="Retroceder 10 Segundos"
+                        title="Retroceder 10 Segundos"></button>
+                    <button class="Button ButtonPlay" aria-label="Reproducir Video" title="Reproducir Video"></button>
+                    <button class="Button ButtonPause" aria-label="Pausar Video" title="Pausar Video"></button>
+                    <button class="Button ButtonForward" aria-label="Avanzar 10 Segundos"
+                        title="Avanzar 10 Segundos"></button>
+                </section>
+                <section class="PlayerProgress">
+                    <input type="range" class="PlayerProgressRange" min="0" step="1">
+                </section>
+            </section>
+        </section>
+    </section>
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>

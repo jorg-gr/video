@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./public/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <title>Mi Reproductor de Video</title>
-</head>
+  </head>
 
-<body>
-    <header class="Header">
-        <h1>Mi Reproductor de Video</h1>
-    </header>
+  <body>
     <section class="Container">
-        <video src="./public/videos/video.mp4" controls class="ContainerVideo"></video>
-        <section class="ContainerControls">
-            <button class="Button ContainerControlsPlay">Play</button>
-            <button class="Button ContainerControlsPause">Pause</button>
-            <button class="Button ContainerControlsStop">Stop</button>
+      <section class="Player">
+        <video
+          src="http://media.w3.org/2010/05/sintel/trailer.mp4"
+          poster="./public/images/sintel.png"
+          class="ContainerVideo"
+        ></video>
+        <section class="PlayerOverlay">
+          <h2 class="PlayerTitle">Mi Reproductor de Video</h2>
+          <section class="PlayerControls">
+            <button
+              class="Button ButtonBackward"
+              aria-label="Retroceder 10 Segundos"
+              title="Retroceder 10 Segundos"
+            ></button>
+            <button
+              class="Button ButtonPlay"
+              aria-label="Reproducir Video"
+              title="Reproducir Video"
+            ></button>
+            <button
+              class="Button ButtonPause"
+              aria-label="Pausar Video"
+              title="Pausar Video"
+            ></button>
+            <button
+              class="Button ButtonForward"
+              aria-label="Avanzar 10 Segundos"
+              title="Avanzar 10 Segundos"
+            ></button>
+          </section>
+          <section class="PlayerProgress">
+            <input type="range" class="PlayerProgressRange" min="0" step="1" />
+          </section>
         </section>
+      </section>
     </section>
-    <footer class="Footer">
-        <pre>Video Credits:</pre>
-        <pre>Motion Graphics provided by <a href="https://www.tubebacks.com">tubebacks</a> / YouTube Channel: <a href="https://goo.gl/aayJRf">freemotionbacks</a></pre>
-    </footer>
-
     <script src="./public/js/script.js"></script>
-</body>
-
+  </body>
 </html>
